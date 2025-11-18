@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Foto Warna-Warni</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Galeri Foto Keren</h1>
+        <p>Koleksi foto-foto indah dari berbagai kategori</p>
+    </header>
+
+    <main>
+        <section class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="alam">Alam</button>
+            <button class="filter-btn" data-filter="kota">Kota</button>
+            <button class="filter-btn" data-filter="hewan">Hewan</button>
+            <button class="filter-btn" data-filter="makanan">Makanan</button>
+        </section>
+
+        <section class="gallery-grid">
+            <!-- Gambar Alam -->
+            <figure class="gallery-item" data-category="alam">
+                <img src="https://picsum.photos/id/10/400/300" alt="Pegunungan yang hijau">
+                <figcaption>Pegunungan Hijau</figcaption>
+            </figure>
+            <figure class="gallery-item" data-category="alam">
+                <img src="https://picsum.photos/id/20/400/300" alt="Pantai yang biru">
+                <figcaption>Pantai Biru</figcaption>
+            </figure>
+            <figure class="gallery-item" data-category="alam">
+                <img src="https://picsum.photos/id/30/400/300" alt="Hutan lebat">
+                <figcaption>Hutan Lebat</figcaption>
+            </figure>
+
+            <!-- Gambar Kota -->
+            <figure class="gallery-item" data-category="kota">
+                <img src="https://picsum.photos/id/100/400/300" alt="Gedung pencakar langit">
+                <figcaption>Gedung Pencakar Langit</figcaption>
+            </figure>
+            <figure class="gallery-item" data-category="kota">
+                <img src="https://picsum.photos/id/200/400/300" alt="Jalan raya malam hari">
+                <figcaption>Kehidupan Malam Kota</figcaption>
+            </figure>
+            <figure class="gallery-item" data-category="kota">
+                <img src="https://picsum.photos/id/300/400/300" alt="Jembatan modern">
+                <figcaption>Jembatan Modern</figcaption>
+            </figure>
+
+            <!-- Gambar Hewan -->
+            <figure class="gallery-item" data-category="hewan">
+                <img src="https://picsum.photos/id/1015/400/300" alt="Singa sedang tidur">
+                <figcaption>Singa</figcaption>
+            </figure>
+            <figure class="gallery-item" data-category="hewan">
+                <img src="https://picsum.photos/id/1020/400/300" alt="Burung beo">
+                <figcaption>Burung Beo</figcaption>
+            </figure>
+
+            <!-- Gambar Makanan -->
+            <figure class="gallery-item" data-category="makanan">
+                <img src="https://picsum.photos/id/1080/400/300" alt="Pizza lezat">
+                <figcaption>Pizza</figcaption>
+            </figure>
+            <figure class="gallery-item" data-category="makanan">
+                <img src="https://picsum.photos/id/1084/400/300" alt="Segelas kopi">
+                <figcaption>Kopi Hangat</figcaption>
+            </figure>
+            <figure class="gallery-item" data-category="makanan">
+                <img src="https://picsum.photos/id/1083/400/300" alt="Hamburger">
+                <figcaption>Hamburger</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-image" src="" alt="">
+        <p class="lightbox-caption"></p>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Galeri Foto Keren. Dibuat dengan &hearts;.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
