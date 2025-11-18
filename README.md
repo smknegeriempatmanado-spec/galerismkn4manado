@@ -1,0 +1,2 @@
+# galerismkn4manado
+GALERI
